@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@font-face{
+    font-family: "Booter Zero Zero";
+    src: url("../Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("../Fonts/Booter\ -\ Zero\ Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: Raleway;
+}
+
+body{ /*El body al ser una caja también posee un padding y margin por defecto, aquí se borran*/
+    margin: 0; 
+    padding: 0;
+}
+
+.main-header{
+    background-image: url("../img/fondo-header.jpg"); /*Se pone una imagen de fondo*/
+    background-size: cover; /*Se define que ancho usará la foto, cover o 100% ocupará todo el ancho*/
+    background-position-y: 28%; /*Se mueve la imagen verticalmente, 0% = top, 100% = bottom*/
+    background-color: rgba(0, 0, 0, 0.6); /*Se define el color y transparencia del fondo*/
+    background-blend-mode: multiply; /*Se fusiona la imagen con el color*/
+    padding-bottom: 25px; /*Se añade un padding de abajo hacia arriba de 30px*/
+    border: 1px solid
+}
+
+.main-nav{
+    border-bottom: 1px solid white;
+    text-align: center; 
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.main-nav ul{ /*ul es un block*/
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li{
+    display: inline-block;
+    padding: 0 3%;
+}
+
+.main-nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0.4em;
+    text-shadow: 3px 3px rgb(0, 63, 0);
+    font-size: 1.2em;
+}
+
+.main-nav a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.usuario{
+    color: white;
+    position: absolute;
+    right: 2em;
+    top: 3em;
+    border: 2px solid rgba(9, 153, 9, 0.8);
+    padding: 0.3em;
+}
+
+.usuario:hover{
+    background-color: rgba(255, 255, 255, 0.5); 
+    cursor: pointer;
+       
+}
+
+.titulo{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: "Booter Zero Zero";
+    font-weight: normal;
+    font-size: 7em;
+    text-shadow: 3px 3px rgb(0, 63, 0);
+}
+
+.btn{
+    padding: 0.7em;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(9, 153, 9, 0.8);
+    border-radius: 5%;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-text{
+    margin-left: 20%;
+}
+
+.btn-play{
+    margin-left: 5%;
+    border-radius: 50%;
+    font-size: 1.2em;
+}
+
+@media(max-width: 768px){
+    .main-nav{
+        font-size: 0.7em;
+    }
+
+    .titulo{
+        font-size: 5em;
+    }
+
+    .main-nav li{
+        padding: 0 2%;
+    }
+
+    .usuario{
+        display: block;
+        position: static;
+        text-align: center;
+        border: none;
+        margin-top: 0.5em;
+    }
+
+    .span-usuario{
+        border: 2px solid rgba(9, 153, 9, 0.8);
+        padding: 0.3em;
+    }
+
+    
+}
