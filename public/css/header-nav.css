@@ -2,8 +2,8 @@
 
 @font-face{
     font-family: "Booter Zero Zero";
-    src: url("../Fonts/Booter - Zero Zero.woff") format("woff"),
-         url("../Fonts/Booter\ -\ Zero\ Zero.woff2") format("woff2");
+    src: url("/Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("/home/dixon/Desarrollo Web/CSS/How to Style a Modern Website/Fonts/Booter - Zero Zero.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -18,7 +18,7 @@ body{ /*El body al ser una caja también posee un padding y margin por defecto, 
 }
 
 .main-header{
-    background-image: url("../img/fondo-header.jpg"); /*Se pone una imagen de fondo*/
+    background-image: url("/img/fondo-header.jpg"); /*Se pone una imagen de fondo*/
     background-size: cover; /*Se define que ancho usará la foto, cover o 100% ocupará todo el ancho*/
     background-position-y: 28%; /*Se mueve la imagen verticalmente, 0% = top, 100% = bottom*/
     background-color: rgba(0, 0, 0, 0.6); /*Se define el color y transparencia del fondo*/
@@ -106,6 +106,8 @@ body{ /*El body al ser una caja también posee un padding y margin por defecto, 
     font-size: 1.2em;
 }
 
+
+
 @media(max-width: 768px){
     .main-nav{
         font-size: 0.7em;
@@ -131,6 +133,4 @@ body{ /*El body al ser una caja también posee un padding y margin por defecto, 
         border: 2px solid rgba(9, 153, 9, 0.8);
         padding: 0.3em;
     }
-
-    
 }

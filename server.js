@@ -15,8 +15,8 @@ app.get("/", (req, res) => {
     });
 })
 
-app.get("/productos", (req, res) => {
-    res.send("Hola Mundo");
+app.get("/conciertos", (req, res) => {
+    res.render("conciertos");
 })
 
 app.listen(8000, () => {
